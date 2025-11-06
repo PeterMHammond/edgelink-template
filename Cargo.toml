@@ -1,0 +1,26 @@
+[package]
+name = "edgelink-template"
+version = "1.0.0"
+edition = "2021"
+description = "Workers-rs Template URL redirect service with QR code generation built on Cloudflare Workers"
+repository = "https://github.com/PeterMHammond/edgelink-template"
+license = "MIT"
+authors = ["Peter Hammond"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[package.metadata.wasm-pack.profile.release]
+wasm-opt = true
+
+[dependencies]
+worker = "0.6.6"
+qrcode = { version = "0.14.1", default-features = false, features = ["svg"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[profile.release]
+lto = true
+strip = true
+codegen-units = 1
+opt-level = "s"

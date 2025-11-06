@@ -1,0 +1,10 @@
+name = "edgelink-template"
+compatibility_date = "2025-01-24"
+main = "build/worker/shim.mjs"
+
+[build]
+command = "worker-build --release"
+
+# KV Namespace - auto-created on first deploy
+[[kv_namespaces]]
+binding = "edgelink"

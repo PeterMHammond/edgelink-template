@@ -1,0 +1,26 @@
+# Rust
+target/
+Cargo.lock
+
+# Workers
+dist/
+build/
+.wrangler/
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.dev.vars
+
+# Project Documentation
+CLAUDE.md
