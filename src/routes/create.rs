@@ -52,7 +52,7 @@ pub async fn get_handler(_req: Request, _ctx: RouteContext<()>) -> Result<Respon
                 <label id="url-label" for="url">URL</label>
                 <input id="url" type="text" name="url" placeholder="example.com or https://example.com" required>
             </div>
-            <button id="submit-btn" type="submit">Generate QR Code</button>
+            <button id="submit-btn" type="submit">Generate Link</button>
         </form>
     </div>
 </body>
